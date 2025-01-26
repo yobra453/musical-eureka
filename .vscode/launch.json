@@ -1,5 +1,24 @@
 {
     "configurations": [
+        module.exports = {
+            content: ["./src/**/*.{html,js}"],
+            theme: {
+              extend: {
+                colors: {
+                  "dubai-blue": "#0A6EBD", // Custom Dubai Health Authority blue
+                  "health-teal": "#2CAE92" // Accent color for CTAs
+                },
+                fontFamily: {
+                  sans: ["Inter", "sans-serif"] // Modern font stack
+                }
+              },
+            },
+            plugins: [
+              require('@tailwindcss/forms'), // For form styling
+              require('@tailwindcss/typography'), // Better text formatting
+            ],
+          }
+
         {
             "name": "Run JavaScript Sample",
             "program": "${file}",

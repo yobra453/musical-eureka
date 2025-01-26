@@ -5,27 +5,54 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "installOhMyZshConfig": true,
+      "upgradePackages": true,
       "username": "codespace",
-      "userUid": "1000",
-      "userGid": "1000"
+      "userUid": "1001",
+      "userGid": "automatic"
     },
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
+      "nodeGypDependencies": true,
+      "installYarnUsingApt": true,
+      "version": "latest",
+      "pnpmVersion": "8.8.0",
+      "nvmVersion": "0.39"
     },
     "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11.9",
-      "installJupyterLab": "false"
+      "installTools": true,
+      "optimize": true,
+      "enableShared": true,
+      "installJupyterlab": true,
+      "version": "os-provided"
     },
     "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest",
-      "ppa": "false"
+      "ppa": true,
+      "version": "latest"
     },
     "ghcr.io/devcontainers/features/git-lfs:1": {
+      "autoPull": true,
+      "installDirectlyFromGitHubRelease": true,
       "version": "latest"
     },
     "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
       "version": "latest"
-    }  
+    },
+    "ghcr.io/dhoeric/features/act:1": {},
+    "ghcr.io/flexwie/devcontainer-features/op:1": {},
+    "ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {},
+    "ghcr.io/wxw-matt/devcontainer-features/script_runner:0": {},
+    "ghcr.io/itsmechlark/features/1password:1": {
+      "version": "2.29"
+    },
+    "ghcr.io/elanhasson/devcontainer-features/dotnet-aspire-daily:1": {},
+    "ghcr.io/cirolosapio/devcontainers-features/alpine-broot:0": {},
+    "ghcr.io/tcaky/devcontainer-features/alpine-bindtools:0": {},
+    "ghcr.io/nikiforovall/devcontainer-features/dotnet-aspire:1": {},
+    "ghcr.io/nikiforovall/devcontainer-features/dotnet-csharpier:1": {}
   },
   "overrideFeatureInstallOrder": [
     "ghcr.io/devcontainers/features/common-utils",

@@ -17,7 +17,23 @@
               require('@tailwindcss/forms'), // For form styling
               require('@tailwindcss/typography'), // Better text formatting
             ],
-          }
+          }{
+            "name": "dubaihealthhacks",
+            "version": "1.0.0",
+            "scripts": {
+              "dev": "vite", // For modern development
+              "build": "vite build",
+              "serve": "vite preview"
+            },
+            "dependencies": {
+              "@tailwindcss/forms": "^0.5.3",
+              "@tailwindcss/typography": "^0.5.9",
+              "autoprefixer": "^10.4.16",
+              "postcss": "^8.4.31",
+              "tailwindcss": "^3.3.3",
+              "vite": "^4.4.9"
+            }
+        
 
         {
             "name": "Run JavaScript Sample",
